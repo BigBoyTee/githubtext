@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form1.css">
+    <title>parenthub listing form</title>
+</head>
+<body>
+        <nav >
+          <h1><span>P</span>arent<span>H</span>ub</h1>
+          <ul>
+            <li><a href="landingpage.html">Home</i></a></li>
+            <li><a href="#">AboutUs</a></li>
+            <li><a href="#">ContactUs</a></li>
+            <li><a href="#">SignIn</a></li>
+          </ul>
+            <p id=showSidebar>
+              <svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" 
+              width="27px" fill="#E5A01D"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </p>
+        </nav>
+        <nav class="sidebar" >
+            <ul>
+                <li><a href="marketplace.html">MarketPlace</a></li>
+                <li><a href="#">AboutUs</a></li>
+                <li><a href="#">ContactUs</a></li>
+            </ul>
+            <button class="sidebarbtn">DISMISS
+            </button>
+        </nav>
+<div class=mainlistingformdiv>
+<form action="https://formsubmit.co/mundia001a@gmail.com" method="POST" id="listingform">
+        <h1 class="homing"><i class="fa-solid fa-house"></i></h1>
+        <span><h6>Complete this Form to be able to list your product</h6></span>
+    <hr class="form-hr">
+        <table>
+            <tr>
+                <td class="firstchild"><label for="proname" class="fomr1inputs">NAME:</label></td>
+                <td class="firstchild"><input type="text" name="name" class="areatotype" placeholder="fullname"></td>
+            </tr>
+            <tr>
+                <td class="firstchild"><label for="proname" class="fomr1inputs">email:</label></td>
+                <td class="firstchild"><input type="email" name="email" class="areatotype"></td>
+            </tr>
+            <tr>
+                <td class="firstchild"><label for="proname" class="fomr1inputs">PRODUCT NAME:</label></td>
+                <td class="firstchild"><input type="text" name="text" class="areatotype"></td>
+            </tr>
+            <tr>
+                <td class="firstchild"><label for="proquantity" class="fomr1inputs">QUANTITY:</label></td>
+                <td class="firstchild"><input type="number"class="areatotype" id="numberInput" name="numberInput" min="0" max="100" step="1" required></td>
+            </tr>
+        </table>
+<span><h6>Choose the condition of the product</h6></span>
+<hr class="form-hr">
+        <table>
+            <tr>
+                <td class="firstchild"><label for="condition" class="condit">NEW</label></td>
+                <td class="firstchild"><input type="radio" name="condition" class="radio-btn"></td>
+            </tr>
+            <tr>
+                <td class="firstchild"><label for="condition" class="condit">USED</label></td>
+                <td class="firstchild"><input type="radio" name="condition" class="radio-btn"></td>
+            </tr>
+            <td class="firstchild"><label for="condition" class="condit">OLD BUT USEABLE</label></td>
+            <td class="firstchild"><input type="radio" name="condition" class="radio-btn" ></td>
+            </tr>
+        </table>
+<span><h6>Choose category in which you would like to list your priducts</h6></span>
+<hr class="form-hr">
+        <table>
+            <tr>
+                <td class="firstchild"><label for="list" class="condit">SELL</label></td>
+                <td class="firstchild"><input type="radio" name="listed" class="radio-btn"></td>
+            </tr>
+            <tr>
+                <td class="firstchild"><label for="list" class="condit">EXCANGE</label></td>
+                <td class="firstchild"><input type="radio" name="listed" class="radio-btn"></td>
+            </tr>
+            <tr>
+                <td class="firstchild"><label for="list" class="condit">DONATE</label></td>
+                <td class="firstchild"><input type="radio" name="listed" class="radio-btn"></td>
+            </tr>
+        </table>
+        <hr class="form-hr">
+       
+        <div class="formbtns">
+            <input type="submit" value="submit" id="subbtn" class="form-btn">
+        </div>
+    </form>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

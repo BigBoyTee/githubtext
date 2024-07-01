@@ -1,0 +1,346 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.herosect {
+    width: 100%;
+    height: 100vh;
+    background-image: url(back5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin: 0;
+    margin-top: 0;
+}
+nav {
+    width: 100%;
+    height: 3.125rem; /* 50px */
+    background-color: #071E44;
+    display: flex;
+    align-items: center;
+    padding: 0 1.25rem; /* 20px */
+    margin: auto;
+    margin-bottom: 0;
+    position: fixed;
+    
+}
+
+nav h1 {
+    margin-left: 0.7rem; /* 20px */
+    margin-bottom: 1.875rem; /* 30px */
+    color: white;
+    font-size: 1.875rem; /* 30px */
+    margin-top: 1.57rem;
+}
+
+nav ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: 1.875rem; /* 30px */
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 0.625rem; /* 10px */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.125rem; /* 18px */
+    height: 1.25rem; /* 20px */
+    line-height: 1.25rem; /* 20px */
+    padding: 0 0.9375rem; /* 15px */
+    border-radius: 0.3125rem; /* 5px */
+    border: 1px solid transparent;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a:hover {
+    background-color: yellow;
+    color: black;
+    border: 1px solid black;
+}
+
+.togglemenu {
+    margin-left: 1.25rem; /* 20px */
+    margin-right: 2.5rem; /* 40px */
+    display: none;
+    background-color: #071E44;
+}
+
+.togglemenu svg {
+    vertical-align: middle;
+}
+
+span {
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #E5A01D;
+}
+#sidebar{
+        position:fixed;
+    right: 0;
+    top:0;
+    padding-top: 50px;
+    background-color: #071e44cb;
+    height: 100%;
+    width: 70%;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+}
+#sidebar ul{
+    display: block;
+   margin-top: 70px;
+   margin-bottom: 40px;
+   margin-right: 20px;
+}
+#sidebar ul li{
+    list-style: none;
+}
+#sidebar ul li a{
+    font-family:poppins;
+    font-size: 20px;
+    margin-top: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#sidebarbtn {
+    width: 7rem; /* Converted to rem units */
+    border: 0;
+    border-radius: 0.625rem; /* Converted to rem units */
+    margin-left: 20%;
+    background-color: #E5A01D;
+    
+}
+@media (max-width: 25rem) {
+    #sidebar {
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+    }
+}
+@media (max-width: 50rem) { /* 800px */
+    nav h1 {
+        margin-left:.3rem; /* 20px */
+        margin-bottom: .7rem; /* 30px */
+        margin-top: 0.6rem;
+        color: white;
+        font-size: 1.2rem; /* 30px */
+    }
+    nav ul {
+        display: none;
+    }
+
+    .togglemenu {
+        display: block;
+        margin-left: auto;
+        margin-right: 0.625rem; /* 30px */
+    }
+    .serviceoffered{
+        font-size: 0.5rem;
+    }
+}
+
+.serviceoffered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px; /* or any desired height */
+    background-color: lightgray; /* Optional: to visualize the div */
+    padding: 4rem;
+}
+.serviceoffered h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem; /* Optional: adjust font size as needed */
+}
+.headermain{
+    width: 100%;
+    background-color: #f3f4f5;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.itemsforsale{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.25rem; /* 20px */
+    gap: 1.25rem; /* 20px */
+}
+
+.itemtosell{
+    width: 14.375rem; /* 230px */
+    background-color: aqua;
+    border-radius: 0.3125rem; /* 5px */
+    box-shadow: 0.625rem 0.625rem 1.25rem rgba(0, 0, 0, 0.3); /* 10px 10px 20px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.imgdiv{
+    width: 100%;
+    height: 60%;
+    background-color: #333333;
+    border-radius: 0.3125rem 0.3125rem 0 0; /* 5px 5px 0 0 */
+}
+
+.imgdiv img{
+    width: 100%;
+    height: 100%;
+}
+
+.itemtosell p{
+    color: black;
+    font-size: 0.9375rem; /* 15px */
+    margin-left: 1.25rem; /* 20px */
+    margin-top: 0.625rem; /* 10px */
+}
+
+.bidbtn{
+    width: 100%;
+    height: 3.125rem; /* 50px */
+    background-color: #E5A01D;
+    color: black;
+    border: 0;
+    border-radius: 0.3125rem; /* 5px */
+    margin-top: 1.375rem; /* 22px */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 48rem) { /* 768px */
+    .itemsforsale {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .itemtosell {
+        width: 80%;
+        margin-right: 0;
+    }
+    .headermain{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 30rem) { /* 480px */
+    .itemtosell p {
+        font-size: 0.875rem; /* 14px */
+        margin-left: 0.625rem; /* 10px */
+    }
+
+    .bidbtn {
+        height: 2.5rem; /* 40px */
+    }
+}
+.communicationholder {
+    width: 100%;
+    height: 18.75rem;
+    background-color: #061e44;
+    padding-top: 1.25rem;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -4px 10px -4px gray;
+    padding-bottom: 2rem;
+}
+
+.communicationholderheader {
+    color: white;
+    padding-left: 5%;
+}
+
+.communication {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.intro {
+    width: 25%;
+    margin-right: 2.5rem; /* 40px */
+    color: wheat;
+    margin-left: 2.5rem; /* 40px */
+}
+
+.intro p {
+    text-align: justify;
+    font-size: 1.125rem; /* 18px */
+}
+
+.divider {
+    height: 80%;
+    width: 0.125rem; /* 2px */
+    background-color: #E5A01D;
+}
+
+.contactinfor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.helpdesk {
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 3.75rem; /* 60px */
+    margin-bottom: 3rem;
+}
+
+.iconz {
+    height: 1.6875rem; /* 27px */
+    width: 1.6875rem; /* 27px */
+    color: #E5A01D;
+}
+
+footer {
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    padding: 0.625rem 0; /* 10px */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 6rem;
+}
+
+footer h6 {
+    margin: 0;
+}
+
+@media screen and (max-width: 48rem) { 
+    .communicationholder{
+        height:46.75rem;
+    }
+    .intro{
+        width: 80%;
+    }
+    .helpdesk{
+        width: 80%;
+    }
+}
+

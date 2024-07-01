@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form2n3.css">
+   
+    <title>parentHub</title>
+</head>
+<body>
+<section class="herosect">
+    <nav >
+      <h1><span>P</span>arent<span>H</span>ub</h1>
+      <ul>
+        <li><a href="marketplace.html">MarketPlace</a></li>
+        <li><a href="#aboutsect">AboutUs</a></li>
+        <li><a href="#contacts">ContactUs</a></li>
+        <li><a href="#">SignIn</a></li>
+      </ul>
+        <p class="togglemenu" onclick="document.getElementById('sidebar')
+        .style.display='block'">
+          <svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" 
+          width="27px" fill="#E5A01D"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </p>
+    </nav>
+    <nav id="sidebar" >
+        <ul>
+            <li><a href="marketplace.html">MarketPlace</a></li>
+            <li><a href="#aboutsect">AboutUs</a></li>
+            <li><a href="#contacts">ContactUs</a></li>
+            <li><a href="#">SignIn</a></li>
+        </ul>
+        <button id="sidebarbtn" onclick="document.getElementById('sidebar')
+        .style.display='none'">DISMISS
+        </button>
+    </nav>
+    <!--form for signin-->
+<div class="main">
+    <div id="formregister">
+        <form action="" id="registeringform">
+            <div class="logoformzz"></div>
+            <h3>Full Name:</h3> 
+            <input type="text" name="username" id="typingpace" placeholder="ENTER YOUR FULLNAME" required>
+            <h3>Email Address:</h3>
+            <input type="email" name="email" id="typingpace" placeholder="Email" required><br>
+            <h3>Phone Number:</h3> 
+            <input type="number"class="areatotype" id="typingpace" name="numberInput" min="0" max="100" step="1" required>
+            <h3>Create Password:</h3>
+            <input type="password" name="password" id="typingpace" placeholder="password" required>
+            <h3 class="passwordz">Re-enter your password:</h3>
+            <input type="password" name="password" id="typingpace" placeholder="password" required><br>
+            <button class="loginbtn">REGISTER</button>
+        </form>
+    </div>
+</div>
+</section>
+    </body>
+    </html>
